@@ -16,6 +16,27 @@
         li {
             list-style-type: none;
         }
+
+        @media (max-width: 600px) {
+            .ui-grid-c {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ui-block-a {
+                border: 10px solid grey;
+                margin-bottom: 20px;
+                padding: 10px;
+                max-width: 80%;
+            }
+
+            .ui-block-a img {
+                height: 200px;
+                width: 100px;
+            }
+        }
     </style>
     <script>
         $(document).on("pagecreate", function () {
