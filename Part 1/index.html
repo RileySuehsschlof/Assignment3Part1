@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery javascript -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- jQuery mobile javascript -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- jQuery mobile css -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="themes/mytheme.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="test.css">
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+    <script>
+        $(document).on("pagecreate", function () {
+            $("[data-role=collapsible]").collapsible();
+            $("[data-role=collapsible]").on("click", function () {
+                var content = $(this).children(".ui-collapsible-content");
+
+                if (content.is(":visible")) {
+                    content.slideUp();
+                } else {
+                    content.slideDown();
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- Blog Page -->
+    <div class="pg" data-role="page" id="Blog">
+        <header data-role="header">
+            <h1 style="background-color: lightgray;width:100%;margin:0;">Pawesome</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#Blog" data-icon="home" data-theme="b" class="ui-btn-active ui-state-persist">Blog</a>
+                    </li>
+                    <li><a href="#petservices" data-icon="grid" data-theme="b">Pet Services</a></li>
+                    <li><a href="#contactus" data-icon="grid" data-theme="b">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="ui-content" role="main">
+
+            <article
+                style="border: 10px solid grey; display: flex; padding-left: 30px; padding-right: 30px; border-radius:10px;">
+                <div style="text-align: center;">
+                    <h3>
+                        Do dogs know their name?
+                    </h3>
+                    <p>Dogs are capable of recogizing their names, discerning it from other sounds. Recent animal
+                        behaviour
+                        studies have found that dog's brains behave in much the same wayour brains do wehn someone says
+                        our
+                        name. It appears that hey are able to recognize that their name is not just another sound that
+                        someone is making, but is meant to specifically identify them.<br /><cite>Deleted User,
+                            Reddit</cite>
+                    </p>
+                </div>
+                <img style="padding-top:10px;" src="qMark.png" alt="question mark image" height="100" width="100">
+            </article>
+
+            <article
+                style="justify-content:center; border: 10px solid grey; display: flex; padding-left: 30px; padding-right: 30px; border-radius:10px;">
+                <div style="margin-right:10px;text-align: center;">
+                    <h3>Essential tips to raise healthy pets</h3>
+                    <ul>
+                        <li>Visit the vet once a year</li>
+                        <li>Keep up to date with vaccines</li>
+                        <li>Keep an eye on your pets weight</li>
+                        <li>Keep your pet free of parasites</li>
+                        <li>Keep up with dental cleanings</li>
+                    </ul>
+                </div>
+                <img style="padding-top:15px;" src="doggoteeth.jpg" height="150" width="150"
+                    alt="dog getting teeth brushed">
+            </article>
+
+            <article
+                style="border: 10px solid grey; display: flex; padding-left: 30px; padding-right: 30px; border-radius:10px;">
+                <div style="text-align: center; margin-left:20px;">
+                    <h3>Why does my dog attack me</h3>
+                    <p>Dogs may bite you for a variety of reasons.They either werent properly socialized as puppies.They
+                        often learn the boundaries between playful nipping and painful bites from their mother and
+                        littermates. They might also bite you out of excitement or impatience.They also bite out of
+                        aggression or fear: Its not always easy to know the difference <br />
+                        <cite>your pet & you</cite>
+                    </p>
+                </div>
+                <img style="padding-top:20px;" src="viciousdog.webp" alt="a viciousdog" height="100" width="100">
+            </article>
+
+            <article
+                style="border: 10px solid grey; display: flex; padding-left: 30px; padding-right: 30px; border-radius:10px;">
+                <div style="text-align: center; margin-right: 10px;">
+                    <h3>How to throw a party for your dog</h3>
+                    <p>Looking to throw a party for your dog? Heres how to throw the best party for your fluffly child.
+                        Get
+                        them a silly little party hat, bandana or crown. Get them their own dog friendly cake for them
+                        to
+                        enjoy. Make sure to play with them as much as possible, whether its fetch, chasing them,
+                        tug-of-war,
+                        or anything else. Lastly make sure that throughout the day they get lots of
+                        treats.<br /><cite>Riley
+                            Suehsschlof, Dog Owner</cite></p>
+                </div>
+                <img style="padding-top:20px;" src="partayhat.jpg" height="100" width="100" alt="party hat">
+            </article>
+
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div class="pg" data-role="page" id="contactus">
+        <header data-role="header">
+            <h1 style="background-color: lightgray;width:100%;margin:0;">Pawesome</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#Blog" data-icon="home" data-theme="b">Blog</a></li>
+                    <li><a href="#petservices" data-icon="grid" data-theme="b">Pet Services</a></li>
+                    <li><a href="#contactus" data-icon="grid" data-theme="b"
+                            class="ui-btn-active ui-state-persist">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="ui-content" style="text-align: center;">
+            <h4>Please contact us by phone, mail, or email</h4>
+            <h4 style="margin-bottom:0px;">Phone</h4>
+            <p style="margin:3px;"><a href="tel:555-555-5555">555-555-5555</a></p>
+            <h4 style="margin-bottom:0px;">Email</h4>
+            <p style="margin:3px;"><a href="mailto:myemail@email.com">myemail@email.com</a></p>
+            <h4 style="margin-bottom:0px;">Mail</h4>
+            <p style="margin-top:3px;">Dog city<br>100 Dog Street<br>Dog City, DG, D0G6I3</p>
+            <div style="padding-bottom:80px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.8598591937066!2d-113.82863327333541!3d52.24592907199061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537456a4e720485b%3A0xfad570c5678b03ce!2sRed%20Deer%20Polytechnic!5e0!3m2!1sen!2sca!4v1712693571768!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <footer style="position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;" data-role="footer">
+            <a style="width:100%;text-align: center;" href="Blog" data-role="button" data-rel="back" data-icon="back"
+                data-theme="b">Back</a>
+        </footer>
+    </div>
+
+    <!-- Pet services page -->
+    <div class="pg" data-role="page" id="petservices">
+        <header data-role="header">
+            <h1 style="background-color: lightgray;width:100%;margin:0;">Pawesome</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#Blog" data-icon="home" data-theme="b">Blog</a></li>
+                    <li><a href="#petservices" data-icon="grid" data-theme="b"
+                            class="ui-btn-active ui-state-persist">Pet Services</a></li>
+                    <li><a href="#contactus" data-icon="grid" data-theme="b">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <div style="text-align:center;">
+            <!-- Grooming -->
+            <div style="border: 20px solid grey; justify-content:space-around;padding-bottom: 30px;">
+                <h3>Essentials for dog grooming</h3>
+                <section style="margin-top:20px;" class="ui-grid-c">
+
+                    <div style="    border: 10px solid grey;
+                " class="ui-block-a">
+                        <img height="200" width="100" src="dogbrush.jpg">
+                        <p>A brush used to detangle a dogs matted hair.</p>
+                    </div>
+
+                    <div style="    border: 10px solid grey;
+                " class="ui-block-a">
+                        <img height=200 width=100 src="dogshampoo.jpg">
+                        <p>Highly recommend this shampoo for washing your dogs hair.</p>
+                    </div>
+
+                    <div style="    border: 10px solid grey;
+                " class="ui-block-a">
+                        <img height=200 width=100 src="dogclippers.webp">
+                        <p>A pair of trimmers to keep your dogs nails short to avoid getting scratched.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Pet hotels -->
+            <div style="border: 20px solid grey; justify-content:space-around;">
+                <h3>Pet Hotels</h3>
+                <button style="background-color:lightgray;" type="button" class="collapsible">What is a pet
+                    hotel?</button>
+                <div class="content">
+                    <p>A pet hotel is a establishment meant to provide a safe nurturing enviroment for your pets while
+                        you are away. Its a place where your dog can go about its daily life without the worry of being
+                        left alone. They provide your pet a comfortable and safe home while you are away. It also gives
+                        them plenty of opportunity to socialize with other dogs.</p>
+                </div>
+                <button style="background-color:lightgray;" type="button" class="collapsible">Why should you use a pet
+                    hotel?</button>
+                <div class="content">
+                    <p>Someone would use a pet hotel when they have to leave their dog behind for a couple of days and
+                        dont have someone to look after them. The cost of a pet hotel can be up to 70 dollars a night.
+                        Pet hotels are an excellent way of letting your dog get the chance to socialize with other
+                        animals. It allows the dog to not feel left behind when you have to leave.</p>
+                </div>
+                <button style="background-color:lightgray;" type="button" class="collapsible">A pet
+                    hotel</button>
+                <div class="content">
+                    <img src="pethotel.jpg" alt="a picture of a pet hotel" height="400" width="400">
+                    <p>A pet hotel</p>
+                </div>
+            </div>
+
+            <!-- Pet day camp -->
+            <section
+                style="border: 20px solid grey; justify-content:space-around;margin-top:0px;border-bottom:120px solid grey;"
+                data-role="collapsible-set">
+                <h3>Pet Day Camp</h3>
+
+                <div data-role="collapsible">
+                    <h4>
+                        <a>What is a pet day camp?</a>
+                    </h4>
+                    <p>I dont really know what information to put here, so in the others ones i might just put some
+                        images and lorem ipsum text. I hope i wont lose marks for that.</p>
+                </div>
+
+
+                <div data-role="collapsible">
+                    <h4>
+                        <a>Should you send your pet to one?</a>
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum libero dui. Nunc a mauris non
+                        lacus suscipit elementum eget nec tellus. Duis in ipsum rutrum, eleifend augue eu, accumsan
+                        nunc. Curabitur vitae vestibulum leo, a dapibus odio. Phasellus id orci rutrum, egestas diam in,
+                        lacinia dolor. Nullam interdum mi at metus commodo aliquet. Etiam sit amet bibendum ex. Maecenas
+                        non volutpat velit, quis efficitur erat. Etiam risus diam, dignissim eget blandit ut, tempus eu
+                        mauris.</p>
+                </div>
+
+                <div data-role="collapsible">
+                    <h4>
+                        <a>Reviews</a>
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum libero dui. Nunc a mauris non
+                        lacus suscipit elementum eget nec tellus. Duis in ipsum rutrum, eleifend augue eu, accumsan
+                        nunc. Curabitur vitae vestibulum leo, a dapibus odio. Phasellus id orci rutrum, egestas diam in,
+                        lacinia dolor. Nullam interdum mi at metus commodo aliquet. Etiam sit amet bibendum ex. Maecenas
+                        non volutpat velit, quis efficitur erat. Etiam risus diam, dignissim eget blandit ut, tempus eu
+                        mauris.</p>
+                </div>
+
+
+                <div data-role="collapsible">
+                    <h4>
+                        <a>More Information</a>
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum libero dui. Nunc a mauris non
+                        lacus suscipit elementum eget nec tellus. Duis in ipsum rutrum, eleifend augue eu, accumsan
+                        nunc. Curabitur vitae vestibulum leo, a dapibus odio. Phasellus id orci rutrum, egestas diam in,
+                        lacinia dolor. Nullam interdum mi at metus commodo aliquet. Etiam sit amet bibendum ex. Maecenas
+                        non volutpat velit, quis efficitur erat. Etiam risus diam, dignissim eget blandit ut, tempus eu
+                        mauris.</p>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.ui-content div h3 {
+    text-align: center;
+}
+
+.ui-footer {
+    text-align: center;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+.ui-grid-c {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.ui-block-a {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.content {
+    /* padding: 0 18px; */
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.ui-collapsible-heading a.ui-collapsible-heading-toggle {
+    text-align: center;
+}
+
+.ui-corner-all {
+    border-radius: 0px;
+}
